@@ -41,7 +41,7 @@
 
         <!-- CTA -->
         <a
-          href="tel:YOUR_NUMBER"
+          href="tel:07429050392"
           class="bg-brand text-black font-semibold px-4 py-2 rounded-lg hover:opacity-90">
           📞 Call Now
         </a>
@@ -58,12 +58,12 @@
         <h1 class="text-4xl md:text-5xl font-bold">Plasterer in Stroud</h1>
 
         <p class="mt-4 text-lg text-white">
-          Skimming, rendering & plaster repairs from a reliable local tradesman
+          Skimming, dry-lining & plaster repairs from a reliable local tradesman
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:YOUR_NUMBER"
+            href="tel:07429050392"
             class="bg-brand text-black font-semibold px-6 py-3 rounded-xl hover:opacity-90">
             📞 Call for a Free Quote
           </a>
@@ -139,11 +139,20 @@
     </section>
 
     <!-- LOCAL AREA -->
-    <section class="bg-gray-50 py-16">
-      <div class="max-w-5xl mx-auto px-6 text-center">
+    <section
+      class="relative text-white py-16"
+      style="
+        background-image: url(&quot;/images/stroudMap.png&quot;);
+        background-size: cover;
+        background-position: center;
+      ">
+      <!-- overlay -->
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      <div class="relative max-w-5xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold">Local Plasterer in Stroud</h2>
 
-        <p class="mt-4 text-gray-600">
+        <p class="mt-4 text-gray-200">
           Based in Stroud and covering Stonehouse, Nailsworth, and Gloucester.
         </p>
       </div>
@@ -159,7 +168,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="bg-gray-900 text-white py-16">
+    <section class="bg-[#2a5a2a] text-white py-16">
       <div class="max-w-5xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold">Get a Free Quote Today</h2>
 
@@ -168,7 +177,7 @@
         </p>
 
         <a
-          href="tel:YOUR_NUMBER"
+          href="tel:07429050392"
           class="inline-block mt-6 bg-brand text-black font-semibold px-8 py-4 rounded-xl">
           📞 Call Now
         </a>
@@ -176,8 +185,64 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="text-center py-8 text-gray-500 text-sm">
-      © Stroud Plastering
+    <footer class="bg-gray-900 text-gray-300 text-sm">
+      <div
+        class="max-w-5xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <!-- Business -->
+        <div>
+          <h3 class="text-white font-semibold mb-3">Stroud Plastering</h3>
+          <p>
+            Professional plastering services in Stroud including skimming,
+            rendering and plaster repairs.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-white font-semibold mb-3">Services</h3>
+          <ul class="space-y-1">
+            <li>
+              <a href="/services/skimming.html" class="hover:text-white"
+                >Skimming</a
+              >
+            </li>
+            <li>
+              <a href="/services/plaster-repairs.html" class="hover:text-white"
+                >Plaster Repairs</a
+              >
+            </li>
+            <li>
+              <a href="/services/dry-lining.html" class="hover:text-white"
+                >Dry Lining</a
+              >
+            </li>
+            <li>
+              <a href="/services/ceilings.html" class="hover:text-white"
+                >Ceilings</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-white font-semibold mb-3">Contact</h3>
+          <p>
+            📞
+            <a href="tel:07429050392" class="hover:text-white">07429050392</a>
+          </p>
+          <p class="mt-2">📍 Stroud, Gloucestershire</p>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-800 text-center py-4 text-gray-500">
+        © <span id="year"></span> Stroud Plastering. All rights reserved.
+      </div>
     </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
